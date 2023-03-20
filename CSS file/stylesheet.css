@@ -1,6 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #171717;
 }
+
 .wrap {
   display: grid;
   grid-template-columns: 200px minmax(600px, 1fr);
@@ -8,36 +15,22 @@ body {
   background-color: #faf4ec;
 }
 
+.nav {
+  list-style-type: circle;
+}
 .hearder {
-  min-height: 100vh;
-  grid-row: span 2;
-  color: #171717;
+  background-color: #ccc;
+  grid-column: 1/2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   margin: 40px 0 50px;
   font-size: 27px;
   text-align: center;
-  font-family: ;
-}
-
-.nav {
-  &_wrap {
-  }
-  &_container {
-    margin-bottom: 40px;
-  }
-  &_list {
-    font-size: 16px;
-    padding: 0 20px;
-  }
-  &_item {
-    margin-bottom: 8px;
-  }
-  &_link {
-    position: relative;
-    text-decoration: none;
-  }
 }
 
 .top-bar {
@@ -46,6 +39,7 @@ body {
   column-gap: 5px;
   grid-template-columns: 1fr;
   align-content: center;
+  padding: 9px 17px;
 }
 .top-bar h1 {
   text-align: center;
@@ -61,6 +55,7 @@ nav {
   margin: 10;
   padding: 10;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -78,6 +73,7 @@ li {
   width: 100%;
   height: 50px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .myButton {
@@ -121,21 +117,27 @@ li {
 
 .note-buttons2 {
   display: flex;
-  width: 100%;
-  height: 50px;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
+  margin: 10px;
 }
-
-.myButton3 {
+.myButton3,
+.myButton4 {
   background-color: #4f8c30;
   border-radius: 8px;
-  display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 15px;
   padding: 10px 14px;
   text-decoration: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.myButton3 {
+  background-color: #4f8c30;
+  color: #ffffff;
+  float: none;
+  margin-left: 10px;
 }
 .myButton3:hover {
   background-color: #72b352;
@@ -147,9 +149,6 @@ li {
 
 .myButton4 {
   background-color: #510b1f;
-  border-radius: 8px;
-  display: inline-block;
-  cursor: pointer;
   color: #ffffff;
   font-family: Arial;
   font-size: 15px;
@@ -165,12 +164,30 @@ li {
 }
 
 .search {
+  flex-grow: 1;
   font-size: 20px;
-  width: 100%;
-  height: 100px;
+}
+textarea {
   border: 1px solid blue;
+  display: block;
+  height: 300px;
+  margin-bottom: 10px;
+  width: 100%;
+  resize: none;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
+.footer img {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   nav {
     justify-content: flex-start;
