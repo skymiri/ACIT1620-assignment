@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS file/stylesheet.css" />
+    <script type="text/javascript" src="../script/scripts.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
       rel="stylesheet"
@@ -15,6 +16,7 @@
   </head>
   <body>
     <div class="wrap">
+      <div class="left">
     <header>
       <div class="header">
         <h1 class="logo">My Notes</h1>
@@ -25,8 +27,10 @@
           </ul>
         </nav>
       </div>
+      </div>
     </header>
     <main>
+      <div class="right">
       <div class="top-bar">
         <h1>Take Better Notes</h1>
         <nav>
@@ -36,15 +40,15 @@
             </ul>
         </nav>
         <div class="note-buttons">
-            <a href="#" class="myButton">New note</a>
-            <a href="#" class="myButton2">Dark Theme</a>
+            <button href="#" id="myButton">New note</button>
+            <button href="#" id="myButton2">Dark Theme</button>
         </div>
         <div class="search">
           <textarea placeholder="This is a placeholder" /></textarea>
         </div>
         <div class="note-buttons2">
-            <a href="#" class="myButton3" style="float:right;">Save</a>
-            <a href="#" class="myButton4" style="float:right;">Cancel</a>
+            <button href="#" id="myButton3" style="float:right;">Save</button>
+            <button href="#" id="myButton4" style="float:right;">Cancel</button>
         </div>
       </div>
       <footer>
@@ -56,6 +60,7 @@
           </div>
         </div>
       </footer>
+    </div>
     </main>
   </body>
 </html>

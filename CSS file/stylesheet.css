@@ -13,7 +13,6 @@ body {
   grid-template-columns: 200px 3fr;
   grid-template-columns: 200px minmax(600px, 1fr);
   grid-template-rows: 1fr;
-  background-color: #faf4ec;
   height: 100vh;
 }
 
@@ -50,7 +49,6 @@ li:visited {
 }
 
 .hearder {
-  background-color: #ccc;
   grid-column: 1/4fr;
   height: 100%;
 }
@@ -62,15 +60,12 @@ li:visited {
   color: #3a9cad;
 }
 
-main {
-  background-color: #f3e9de;
-}
 
 .top-bar {
   align-content: center;
   padding: 9px 17px;
   color: #3a9cad;
-  height: 70%;
+  height: 80%;
 }
 
 .top-bar h1 {
@@ -85,7 +80,7 @@ main {
   flex-wrap: wrap;
 }
 
-.myButton {
+#myButton {
   background-color: #1e5f75;
   border-radius: 8px;
   display: inline-block;
@@ -97,16 +92,16 @@ main {
   text-decoration: none;
 }
 
-.myButton:hover {
+#myButton:hover {
   background-color: #175059;
 }
 
-.myButton:active {
+#myButton:active {
   position: relative;
   top: 1px;
 }
 
-.myButton2 {
+#myButton2 {
   background-color: #3f545c;
   border-radius: 8px;
   display: inline-block;
@@ -119,11 +114,11 @@ main {
   margin-left: auto;
 }
 
-.myButton2:hover {
+#myButton2:hover {
   background-color: hwb(189 23% 32%);
 }
 
-.myButto2:active {
+#myButto2:active {
   position: relative;
   top: 1px;
 }
@@ -135,8 +130,8 @@ main {
   margin: 10px;
 }
 
-.myButton3,
-.myButton4 {
+#myButton3,
+#myButton4 {
   background-color: #4f8c30;
   border-radius: 8px;
   cursor: pointer;
@@ -148,23 +143,23 @@ main {
   margin-left: 10px;
 }
 
-.myButton3 {
+#myButton3 {
   background-color: #4f8c30;
   color: #ffffff;
   float: none;
   margin-left: 10px;
 }
 
-.myButton3:hover {
+#myButton3:hover {
   background-color: #72b352;
 }
 
-.myButton3:active {
+#myButton3:active {
   position: relative;
   top: 1px;
 }
 
-.myButton4 {
+#myButton4 {
   background-color: #510b1f;
   color: #ffffff;
   font-family: Arial;
@@ -173,11 +168,11 @@ main {
   text-decoration: none;
 }
 
-.myButton4:hover {
+#myButton4:hover {
   background-color: #430608;
 }
 
-.myButton4:active {
+#myButton4:active {
   position: relative;
   top: 1px;
 }
@@ -232,9 +227,9 @@ textarea {
 
   /* 텍스트 영역 확장 */
   main {
-    /* 사이드바의 너비 */
     height: 100vh;
   }
+
 }
 
 /* 모바일 스타일 */
@@ -256,4 +251,22 @@ textarea {
 */ * {
   box-sizing: border-box;
   position: relative;
+}
+
+.left {
+  background-color: #faf4ec;
+}
+
+.right {
+  background-color: #f3e9de;
+}
+
+.dark-mode .left {
+  background-color: #232121;
+  color: #f3f1de
+}
+
+.dark-mode .right {
+  background-color: #232121;
+  color: #f3f1de
 }
