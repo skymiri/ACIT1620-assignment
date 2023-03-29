@@ -17,11 +17,11 @@ body {
 }
 
 
-.ul_dot {
+#ul_dot {
   text-align: left;
 }
 
-.ul_dot li {
+#ul_dot li {
   text-decoration-line: none;
 }
 
@@ -80,7 +80,7 @@ li:visited {
   flex-wrap: wrap;
 }
 
-#myButton {
+#new-note-button {
   background-color: #1e5f75;
   border-radius: 8px;
   display: inline-block;
@@ -92,11 +92,11 @@ li:visited {
   text-decoration: none;
 }
 
-#myButton:hover {
+#new-note-button:hover {
   background-color: #175059;
 }
 
-#myButton:active {
+#new-note-button:active {
   position: relative;
   top: 1px;
 }
@@ -130,8 +130,8 @@ li:visited {
   margin: 10px;
 }
 
-#myButton3,
-#myButton4 {
+#save-button,
+#cancel-button {
   background-color: #4f8c30;
   border-radius: 8px;
   cursor: pointer;
@@ -143,23 +143,23 @@ li:visited {
   margin-left: 10px;
 }
 
-#myButton3 {
+#save-button {
   background-color: #4f8c30;
   color: #ffffff;
   float: none;
   margin-left: 10px;
 }
 
-#myButton3:hover {
+#save-button:hover {
   background-color: #72b352;
 }
 
-#myButton3:active {
+#save-button:active {
   position: relative;
   top: 1px;
 }
 
-#myButton4 {
+#cancel-button {
   background-color: #510b1f;
   color: #ffffff;
   font-family: Arial;
@@ -168,16 +168,16 @@ li:visited {
   text-decoration: none;
 }
 
-#myButton4:hover {
+#cancel-button:hover {
   background-color: #430608;
 }
 
-#myButton4:active {
+#cancel-button:active {
   position: relative;
   top: 1px;
 }
 
-.search {
+#editor {
   flex-grow: 1;
   font-size: 20px;
 }

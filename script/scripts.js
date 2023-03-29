@@ -22,13 +22,7 @@ const newNoteButton = document.getElementById("new-note-button");
 const saveButton = document.getElementById("save-button");
 const cancelButton = document.getElementById("cancel-button");
 const editor = document.getElementById("editor");
-const textArea = editor.querySelector("textarea");
-
-// Hide the editor and toolbar by default
-editor.style.display = "none";
-newNoteButton.style.display = "block";
-saveButton.style.display = "none";
-cancelButton.style.display = "none";
+const textArea = document.querySelector("textarea");
 
 // Add event listener to the "New Note" button
 newNoteButton.addEventListener("click", () => {
@@ -40,12 +34,6 @@ newNoteButton.addEventListener("click", () => {
     cancelButton.style.display = "block";
     // Clear the text area
     textArea.value = "";
-  } else {
-    // Hide the editor and toolbar
-    editor.style.display = "none";
-    newNoteButton.style.display = "block";
-    saveButton.style.display = "none";
-    cancelButton.style.display = "none";
   }
 });
 
@@ -70,4 +58,15 @@ cancelButton.addEventListener("click", () => {
   newNoteButton.style.display = "block";
   saveButton.style.display = "none";
   cancelButton.style.display = "none";
+});
+
+sidebar.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI") {
+    const title = event.target.textContent;
+    const note = notesArray.find((note) => note.title === title);
+    if (note) {
+      textArea.value = note.body;
+      newNoteButton.click();
+    }
+  }
 });

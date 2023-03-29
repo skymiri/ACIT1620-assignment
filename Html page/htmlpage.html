@@ -21,16 +21,18 @@
       <div class="header">
         <h1 class="logo">My Notes</h1>
         <nav>
-          <ul class="ul_dot">
-              <li><a href="#">Note one</a></li>
-              <li><a href="#">Note two</a></li>
+          <div id = "ul_dot">
+          <ul>
+              <li>Note one</li>
+              <li>Note two</li>
           </ul>
+          </div>
         </nav>
       </div>
       </div>
     </header>
+    <div class="right">
     <main>
-      <div class="right">
       <div class="top-bar">
         <h1>Take Better Notes</h1>
         <nav>
@@ -40,15 +42,15 @@
             </ul>
         </nav>
         <div class="note-buttons">
-            <button href="#" id="myButton">New note</button>
+            <button id="new-note-button">New note</button>
             <button href="#" id="myButton2">Dark Theme</button>
         </div>
-        <div class="search">
+        <div id="editor">
           <textarea placeholder="This is a placeholder" /></textarea>
         </div>
         <div class="note-buttons2">
-            <button href="#" id="myButton3" style="float:right;">Save</button>
-            <button href="#" id="myButton4" style="float:right;">Cancel</button>
+            <button href="#" id="save-button" style="float:right;">Save</button>
+            <button href="#" id="cancel-button" style="float:right;">Cancel</button>
         </div>
       </div>
       <footer>
@@ -60,7 +62,7 @@
           </div>
         </div>
       </footer>
-    </div>
     </main>
+  </div>
   </body>
 </html>
